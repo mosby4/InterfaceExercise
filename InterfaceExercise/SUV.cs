@@ -12,7 +12,7 @@ namespace InterfaceExercise
         }
         public void PreShipInspection()
         {
-            Console.WriteLine($" Vehicle {GetType().Name} has passed all required checks. ");
+            Console.WriteLine($"Vehicle {GetType().Name} has passed all required checks. ");
         }
         public void VehicleTotal()
         {
