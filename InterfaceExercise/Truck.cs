@@ -25,9 +25,9 @@ namespace InterfaceExercise
 
 		// IVehicle properties
         public string Vin { get; set; }
-        public string Engine { get; set; } = "V8";
-        public bool CarbCompliant { get; set; } = true;
-        public string AutoManual { get; set; } = "Auto";
+        public string Engine { get; set; }
+        public bool CarbCompliant { get; set; } 
+        public string AutoManual { get; set; } 
 
         // ICompnay properties
         public string Logo { get; set; }

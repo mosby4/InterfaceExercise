@@ -11,7 +11,7 @@ namespace InterfaceExercise
             var Silverado = new Truck()
             {
                 Vin = "1HGCG1657WA051534",
-                AutoManual = "",
+                AutoManual = " Automatic",
                 GasDiesel = "Gas",
                 CarbCompliant = true ,
                 Engine = "V8",
@@ -22,7 +22,7 @@ namespace InterfaceExercise
             var Jetta = new Car()
             {
                 Vin = "1HGCG1657KA051534",
-                AutoManual = "",
+                AutoManual = "Automatic",
                 Engine = "Inline five cylinder",
                 CarbCompliant = true,
                 CoupeSedan = "Sedan",
@@ -32,7 +32,7 @@ namespace InterfaceExercise
             var AudiQ7 = new SUV()
             {
                 Vin = "1FGCG1657LA051534",
-                AutoManual = "",
+                AutoManual = "Automatic",
                 Engine = "V6",
                 CarbCompliant = true,
                 CargoSqFt = 300,
@@ -50,9 +50,12 @@ namespace InterfaceExercise
                 Console.WriteLine("Mainfest item details...");
                 
                  vehicle.PreShipInspection();
-                 vehicle.ReadyForTransit();
-                 vehicle.VehicleTotal();
-                 Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine($"Vin {vehicle.Vin }, engine = {vehicle.Engine} Carb compliant {vehicle.CarbCompliant } Transmission = {vehicle.AutoManual }, ");
+                Console.WriteLine();
+                vehicle.ReadyForTransit();
+                Console.WriteLine("");
+                 Console.WriteLine("-----------------------------");
              }
            
             
